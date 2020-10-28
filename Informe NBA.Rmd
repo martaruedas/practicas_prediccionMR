@@ -1,0 +1,24 @@
+---
+title: "Informe NBA Regresión y Salario"
+author: "Marta Ruedas Burgos"
+date: "10/28/2020"
+class: "Predicción"
+professor: "Ricardo A. Queralt @Cunef - V1.02"
+output: html_document
+---
+
+# CASO PRÁCTICO 01: SALARIO NBA
+
+## Master en Data Science para Finanzas: Predicción
+
+El objetivo de este caso práctico ha sido determinar el modelo más deseable para predecir el salario de los jugadores de la NBA. Los datos a analizar han sido localizados en el fichero nominado nba.csv, el cual nos ha facilitado para la resolución del caso. El salario de los jugadores de la NBA es un conjunto de datos estadísticos desarrollados para el futuro, de manera que podamos medir el valor de cada jugador de un método más sencillo y rápido en un cierto plazo de tiempo. 
+En primer lugar he creado un R Script donde he ido resolviendo paso por paso el modelo mencionado anteriormente, con la finalidad de predecir el salario de los jugadores de la NBA. Presentamos un análisis descriptivo donde las variables que muestra son categóricas y cuantitativaS, y donde los modelos de regresión tienen un objetivo único, predecir la variable dependiente. El P es un valor a destacar en esta práctica ya que nos indica si es una variable relevante dentro del modelo, si la variante es mayor al 5% significará que no es una variable relevante. El mínimo obtenido de la tabla de los modelos de regresión ha sido de 3.355.00 negativo mientras que el máximo ha sido de 31.091.979 positivo, la variable dependiente.
+El mejor modelo para predecir el salario de lo jugadores de la NBA ha sido la creación de la función tipo salario para la tabla la cual he llamado salary_nba_prediccion; incluyendo el modelo, NBA_DraftNumber, Age, G, MP, PER. Seguido de la predicción; también incluyendo los apartados anteriores. La función empleada para determinar el modelo a predecir según el salario ha sido la siguiente: " salary_nba_prediccion <- function(model, NBA_DraftNumber, Age, G, MP, PER){prediccion_nba <- predict(model, data.frame( NBA_DraftNumber, Age, G, MP, PER))}". Los resultados adquiridos usando la función mencionada sobre el jugador de la NBA Lebron James ha sido de casi 23 millones de dolares como la predicción más aproximada a su salario. 
+La conclusión lograda después del primer análisis práctico ha sido que todos los jugadores de la NBA exportados del fichero principal nba.csv puede ser aleatoria usando set.seed donde nos predice un salario predeterminado para cada jugador de la NBA, de esta forma podemos determinar el valor de cada uno de ellos con un procedimiento directo.   
+
+Enlace de acceso al repository GitHub con el código: https://github.com/martaruedas/nba_prediccionMRB.git
+
+
+---
+email: marta.ruedas@cunef.edu
+---
